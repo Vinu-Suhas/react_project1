@@ -1,0 +1,30 @@
+.heading_container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    list-style-type:none;
+}
+
+.center{
+    text-align: center;
+}
+body{
+    background: rgb(165,23,247);
+background: linear-gradient(90deg, rgba(165,23,247,1) 0%, rgba(0,155,255,0.9389005602240896) 98%);
+}
+*{
+    color: white;
+}
+hr{
+    border: 2px solid white;
+    border-radius: 5px;
+    width:75%
+}
+.underline:hover{
+    text-decoration:none;
+}
+h1{
+    text-align: center;
+}
