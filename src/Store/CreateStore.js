@@ -88,6 +88,18 @@ function CreateStore(props) {
       category: "bollywood",
     },
     {
+      id: 55,
+      title: `'Leo' box office collection: Vijay's film exceeds Rajinkanth's 'Jailer' in the USA premiere sales`,
+      category: "bollywood",
+      img: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1i5eJV.img?w=768&h=432&m=6&x=813&y=220&s=264&d=264&f=webp",
+    },
+    {
+      id: 23,
+      title: `'Leo' box office collection: Vijay's film exceeds Rajinkanth's 'Jailer' in the USA premiere sales`,
+      category: "bollywood",
+      img: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1i5eJV.img?w=768&h=432&m=6&x=813&y=220&s=264&d=264&f=webp",
+    },
+    {
       id: 13,
       img: "https://c.ndtvimg.com/2023-10/kkvssbr8_subway_625x300_12_October_23.jpg",
       title:
