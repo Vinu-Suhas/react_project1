@@ -4,7 +4,9 @@ export function  Food(){
     const data=useContext(bucket)
 
     return(<>
-        <h1>This is Technology Components</h1>
+         <div className="contentContainer">
+        <div className="leftContainer">
+        <h2>Food</h2>
         {data.data.filter(element=>element.category==='food').map((element,index)=>{
             return(<>
                 <div key={index}>
@@ -14,5 +16,10 @@ export function  Food(){
                 </div>
             </>)
         })}
+        </div>
+        <div className="rightContainer">
+        <h1>Top posts</h1>
+            </div>
+            </div>
         </>)
 }

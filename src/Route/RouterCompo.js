@@ -1,7 +1,8 @@
 import React from "react";
 import { BrowserRouter ,Routes,Route} from "react-router-dom";
 import {Contact} from './Student'
-// import 
+
+
 export function RouterCompo(){
     return(<>
     <BrowserRouter>

@@ -9,7 +9,7 @@ function CreateStore(props) {
       id: 1,
       img: "https://www.zdnet.com/a/img/2023/10/11/ab9325d7-0f69-45c3-b776-34ec892680d9/dsc09990.jpg",
       category: "technology",
-      title: "Pixel 8 and  8 Pro",
+      title: "Pixel 8 and  8 Pro is about to launch with 120Hz display leaks",
     },
     {
       id: 2,

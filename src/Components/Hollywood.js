@@ -4,6 +4,10 @@ export function  Hollywood(){
     const data=useContext(bucket)
 
     return(<>
+    <div className="contentContainer">
+                <div className="leftContainer">
+            
+        <h2>Hollywood</h2>
         {data.data.filter(element=>element.category==='hollywood').map((element,index)=>{
             return(<>
                 <div key={index}>
@@ -13,5 +17,10 @@ export function  Hollywood(){
                 </div>
             </>)
         })}
+        </div>
+                <div className="rightContainer">
+            <h1>Top posts</h1>
+            </div>
+        </div>
         </>)
 }

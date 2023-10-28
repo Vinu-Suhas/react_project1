@@ -4,7 +4,10 @@ export function  Fitness(){
     const data=useContext(bucket)
 
     return(<>
-      
+    {/* <div className="left" */}
+    <div className="contentContainer">
+    <div className="leftContainer">
+      <h2>Fitness</h2>
         {data.data.filter(element=>element.category==='fitness').map((element,index)=>{
             return(<>
                 <div key={index}>
@@ -14,5 +17,10 @@ export function  Fitness(){
                 </div>
             </>)
         })}
+        </div>
+        <div className="rightContainer">
+            
+            </div>
+            </div>
         </>)
 }

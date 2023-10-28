@@ -3,7 +3,8 @@ import { bucket } from "../Store/CreateStore";
 export function  Bollywood(){
           const data=useContext(bucket)
     return(<>
-
+        <div className="leftContainer">
+        <h2>Bollywood</h2>
         {data.data.filter(element=>element.category==='bollywood').map((element,index)=>{
             return(<>
                 <div key={index}>
@@ -13,5 +14,9 @@ export function  Bollywood(){
                 </div>
             </>)
         })}
+        </div>
+        <div className="rightContainer">
+        <h1>Top posts</h1>
+        </div>
         </>)
 }

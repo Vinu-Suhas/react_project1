@@ -10,10 +10,10 @@ ul{
 .center{
     text-align: center;
 }
-body{
+/* body{
     background: rgb(165,23,247);
 background: linear-gradient(90deg, rgba(165,23,247,1) 0%, rgba(0,155,255,0.9389005602240896) 98%);
-}
+} */
 *{
     color: white;
 }
