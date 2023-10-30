@@ -8,6 +8,7 @@ import {Food} from './Components/Food'
 import {BrowserRouter,Link,Routes,Route} from 'react-router-dom'
 import {CreateStore} from './Store/CreateStore'
 import { Homes } from "./Components/Home";
+import { ArticleInfo } from "./Components/ArticleInfo";
 export function Home() {
   return (
     <>
@@ -34,6 +35,7 @@ export function Home() {
             <Route path="/fitness" element={<Fitness/>}/>
             <Route path="/technology" element={<Technology/>}/>
             <Route path="/food" element={<Food/>}/>
+            <Route path="/article/:id" element={<ArticleInfo/>}/>
             <Route path="/" element={<Homes/>}/>
         </Routes>
         </BrowserRouter>

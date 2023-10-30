@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import { bucket } from "../Store/CreateStore";
+import { Link } from "react-router-dom";
 export function  Technology(){
     const data=useContext(bucket)
 
@@ -14,8 +15,8 @@ export function  Technology(){
                 
             <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
             <div className="textContent">
-            <h1 className="contentTitle">{element.title}</h1>
-            <p>Gujarat is vastly underrated and it’s a mystery to us why the region isn’t more well-</p>
+            <Link to={`/article/${index}`}><h1 className="contentTitle">{element.title}</h1></Link>
+            <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p>
             </div>
 
             {/* <hr style={{ color:"#333",border:"3px solid grey",width:"90%"}}/> */}

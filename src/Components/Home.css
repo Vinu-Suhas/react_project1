@@ -76,10 +76,12 @@
 
   .leftContainer{
     width: 50%;
+    margin-left: 10%;
 
   }
   .contentContainer{
     display: flex;
+    width: 100%;
   }
 
   .contentTitle{
@@ -98,4 +100,17 @@
 
   .rightContainer{
     display: block;
+  }
+  .imgContainer{
+    display: flex;
+    justify-content: center;
+  }
+  .authorInfo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  .authorTextContent{
+    margin-top: 37px;
+    margin-left: 20px;
   }
