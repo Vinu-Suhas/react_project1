@@ -84,8 +84,11 @@
 
   .leftContainer{
     width: 50%;
-    margin-left: 10%;
+    margin-left: 5vw;
 
+  }
+  .rightContainer{
+    width: 40%;
   }
   .contentContainer{
     display: flex;
@@ -122,3 +125,18 @@
     margin-top: 37px;
     margin-left: 20px;
   }
+
+  .recommendedContent{
+    display: flex;
+
+    justify-content: space-evenly;
+
+}
+
+.recommendedContentElement{
+  width:50ch;
+}
+.underlineHeadingStyle{
+  text-align:"left";
+  text-decoration: "underline";
+  text-decoration-color:"red"}

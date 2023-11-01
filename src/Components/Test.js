@@ -134,4 +134,4 @@ let a=[
     }
   ]
 
-console.log(a.filter(x=>x.category==='fitness'))
+console.log(a.filter(x=>x.category==='technology' ).slice(0,5))

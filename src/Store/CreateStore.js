@@ -137,6 +137,24 @@ function CreateStore(props) {
       img:'https://images.everydayhealth.com/images/digestive-health/ulcerative-colitis/cs-how-aerobic-exercise-can-help-ulcerative-colitis-722x406.jpg?w=324',
       category:'fitness',
       desrpiton:'Running has been increasingly popular for decades. That’s not surprising considering its exercise brags: It requires little equipment, just a pair of running shoes. It’s a workout you can do on your own time and take with you if you’re away from home (no gym or class times to worry about). It’s efficient. And it can be great for boosting cardiovascular fitness.'
+    },
+    {
+      id:19,
+      title:'Shaadi season is here; last-minute fitness routine to look fantastic',
+      img:'https://static.toiimg.com/thumb/104824076.cms?width=680&height=512&imgsize=831880',
+      category:'fitness',
+    },
+    {
+      id:20,
+      title:'Roshan Vichare on his physical transformation: I am blessed to have been born into a family where fitness is everything',
+      img:'https://static.toiimg.com/thumb/msid-104851179,imgsize-75668,width-400,resizemode-4/104851179.jpg',
+      category:'fitness',
+    },
+    {
+      id:21,
+      title:'Inside Netflix’s Show-Stopping Restoration of Hollywood’s Iconic Egyptian Theater',
+      img:'https://variety.com/wp-content/uploads/2023/10/Netflix_Egyptian_Theatre_10222023_0248-v1A.jpg?w=1000&h=563&crop=1&resize=1000%2C563',
+      category:'hollywood'
     }
   ]);
   return (
