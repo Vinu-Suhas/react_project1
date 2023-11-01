@@ -1,21 +1,22 @@
 import React, { useContext } from "react";
 import { bucket } from "../Store/CreateStore";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 export function  Technology(){
     const data=useContext(bucket)
 
     
     return(<>
-     <div className="contentContainer">
+     <div className="contentContainer" key="technology">
     <div className="leftContainer">
     <h2>Technology</h2>
     {data.data.filter(element=>element.category==='technology').map((element,index)=>{
         return(<>
-            <div key={index} className="contentBox">
+            <div key={element.id} className="contentBox">
                 
             <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
-            <div className="textContent">
-            <Link to={`/article/${index}`}><h1 className="contentTitle">{element.title}</h1></Link>
+            <div key={index} className="textContent">
+            <Link to={`/article/${element.id}`}><h1 className="contentTitle">{element.title}</h1></Link>
             <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p>
             </div>
 
@@ -33,7 +34,9 @@ export function  Technology(){
             <h2 style={{width:"400px"}}>Catch hot Ballons with adventures trekking</h2>
             <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c0a3fdfc-8a4f-4b20-92ef-896499c05843.gif" height="519px" width="452px"/>
             </div>
+
             </div>
+           
           
     </>)
 }

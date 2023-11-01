@@ -1,10 +1,4 @@
-import React, { useState } from "react";
-import { createContext } from "react";
-
-export const bucket = createContext();
-
-function CreateStore(props) {
-  const [data, setData] = useState([
+let a=[
     {
       id: 1,
       img: "https://www.zdnet.com/a/img/2023/10/11/ab9325d7-0f69-45c3-b776-34ec892680d9/dsc09990.jpg",
@@ -33,7 +27,7 @@ function CreateStore(props) {
         "OnePlus Open takes back seat to identical twin, to be announced hours later",
     },
     {
-      id: 18,
+      id: 4,
       img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/australias-marcus-stoinis-leaves-the-field-after-being-dismissed-in-lucknow-ap-121024820-16x9.jpg?VersionId=2D4SqInI.uIkQ8y.QpwvIN.BTLnJf21m&size=690:388",
       category: "sports",
       title:
@@ -83,21 +77,21 @@ function CreateStore(props) {
     },
     {
       id: 12,
-      img:'https://static.toiimg.com/thumb/104851030.cms?width=680&height=512&imgsize=60002',
-      title:'Aishwarya Rai, Salman Khan, Kangana Ranaut: Bollywood celebrities who confessed to have had a crush on their teachers',
+      img: `https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1i8062.img?w=768&h=432&m=6&x=375&y=138&s=222&d=222`,
+      title: `Veteran Bollywood Actor Tiku Talsania Struggles To Find Roles Amid Industry Changes`,
       category: "bollywood",
     },
     {
       id: 55,
-      title: `Amidst trolling, Deepika Padukone shares a hilarious video on Instagram; Ranveer Singh can't stop laughing`,
+      title: `'Leo' box office collection: Vijay's film exceeds Rajinkanth's 'Jailer' in the USA premiere sales`,
       category: "bollywood",
-      img: "https://static.toiimg.com/thumb/msid-104790952,imgsize-44820,width-400,resizemode-4/104790952.jpg",
+      img: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1i5eJV.img?w=768&h=432&m=6&x=813&y=220&s=264&d=264&f=webp",
     },
     {
       id: 23,
-      title: `Amit Sadh recalls being 'stuck' in Bollywood while Sushant, Rajkummar made it big`,
+      title: `'Leo' box office collection: Vijay's film exceeds Rajinkanth's 'Jailer' in the USA premiere sales`,
       category: "bollywood",
-      img: "https://akm-img-a-in.tosshub.com/indiatoday/images/story/202310/kai-po-che-featured-sushant--rajkummar-and-amit-in-the-main-leads-01423680-16x9_0.jpg?VersionId=uyLwRgxwoQLnFBO3LtZ2h3fw1AmWsARr&size=690:388",
+      img: "https://img-s-msn-com.akamaized.net/tenant/amp/entityid/AA1i5eJV.img?w=768&h=432&m=6&x=813&y=220&s=264&d=264&f=webp",
     },
     {
       id: 13,
@@ -138,14 +132,6 @@ function CreateStore(props) {
       category:'fitness',
       desrpiton:'Running has been increasingly popular for decades. That’s not surprising considering its exercise brags: It requires little equipment, just a pair of running shoes. It’s a workout you can do on your own time and take with you if you’re away from home (no gym or class times to worry about). It’s efficient. And it can be great for boosting cardiovascular fitness.'
     }
-  ]);
-  return (
-    <>
-      <bucket.Provider value={{ data, setData }}>
-        {props.children}
-      </bucket.Provider>
-    </>
-  );
-}
+  ]
 
-export { CreateStore };
+console.log(a.filter(x=>x.category==='fitness'))

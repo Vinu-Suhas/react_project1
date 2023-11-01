@@ -1,0 +1,19 @@
+/* .mainFooter{
+    background-color: red;
+    color: white;
+} */
+.mainFooter{
+    color: white;
+    background-color: gray;
+    padding-top: 3em;
+    position: relative;
+    bottom: -2vh;
+    width: 100%;
+}
+.unstyledList{
+    /* display: flex; */
+    justify-content: space-evenly;
+}
+.col-sm{
+    text-align: center;
+}

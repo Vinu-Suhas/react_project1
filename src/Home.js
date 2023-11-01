@@ -9,6 +9,7 @@ import {BrowserRouter,Link,Routes,Route} from 'react-router-dom'
 import {CreateStore} from './Store/CreateStore'
 import { Homes } from "./Components/Home";
 import { ArticleInfo } from "./Components/ArticleInfo";
+import Footer from "./Components/Footer";
 export function Home() {
   return (
     <>
@@ -41,6 +42,7 @@ export function Home() {
         </BrowserRouter>
         </CreateStore>
         </div>
+        <Footer/>
     </>
   );
 }

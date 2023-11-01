@@ -7,14 +7,14 @@ import { AuthorInfo } from "./AuhtorIntro";
 export function ArticleInfo(){
     const data=useContext(bucket)
     const articleId=useParams().id
-    console.log(data.data[articleId]);
+   const articleData=data.data.find(element=>element.id==articleId)
     return(<>
-    <h1>{data.data[articleId].title}</h1>
+    <h1>{articleData.title}</h1>
 
         <AuthorInfo/>
 {/* <FontAwesomeIcon icon="fa-solid fa-dice-one" /> */}
     <div className="imgContainer" >
-    <img src={data.data[articleId].img} width="500px" style={{border:"solid black 4px",alignSelf:"center"}}/>
+    <img src={articleData.img} width="500px" style={{border:"solid black 4px",alignSelf:"center"}}/>
     </div>
         
 
