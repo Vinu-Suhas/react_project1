@@ -33,7 +33,7 @@ export default function Footer() {
           <hr style={{width:"100%"}}/>
           <div className='row'>
               <p className='col-sm'>
-              &copy;{new Date().getFullYear()} THICC MEMES | All rights reserved |
+              &copy;{new Date().getFullYear()} Vinu Suhas  | All rights reserved |
             Terms Of Service | Privacy
               </p>
           </div>

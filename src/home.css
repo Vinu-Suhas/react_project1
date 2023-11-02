@@ -1,6 +1,7 @@
 .heading_container{
     display: flex;
     justify-content: space-evenly;
+    background-color: lightblue;
 }
 
 ul{

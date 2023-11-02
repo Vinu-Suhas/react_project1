@@ -48,7 +48,7 @@ function CreateStore(props) {
     {
       id: 6,
       title: `Shubman Gill OUT Again, Suryakumar Yadav And Mohammed Shami IN! India's Likely Playing XI Against Pakistan`,
-      link: "https://static.tnn.in/thumb/msid-104369103,thumbsize-41396,width-1280,height-720,resizemode-75/104369103.jpg",
+      img: "https://www.hindustantimes.com/ht-img/img/2023/11/01/550x309/Collage_Maker-01-Nov-2023-10-18-PM-1498_1698859887985_1698859894533.jpg",
       category: "sports",
     },
     {
