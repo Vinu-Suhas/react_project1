@@ -10,6 +10,8 @@ import {CreateStore} from './Store/CreateStore'
 import { Homes } from "./Components/Home";
 import { ArticleInfo } from "./Components/ArticleInfo";
 import Footer from "./Components/Footer";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faB, faBars } from "@fortawesome/free-solid-svg-icons";
 export function Home() {
   return (
     <div style={{width:"100%",}}>
@@ -28,6 +30,7 @@ export function Home() {
            <Link to="/technology"><li className="underline">Technology</li></Link>
            <Link to="/food"><li className="underline">Food</li></Link>
            <Link to="/fitness"><li className="underline">Fitness</li></Link>
+           <li className="dropDownMenu"><FontAwesomeIcon icon={faBars}  size="2xl" /></li>
         </ul>
         <hr/>
         <Routes >

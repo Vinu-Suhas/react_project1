@@ -1,8 +1,9 @@
 import React, { useContext } from "react";
 import { bucket } from "../Store/CreateStore";
-import { Link } from "react-router-dom";
+import { Link,  } from "react-router-dom";
 export function  Bollywood(){
           const data=useContext(bucket)
+        
     return(<>
         <div className="contentContainer" >
        <div className="leftContainer">
@@ -11,10 +12,10 @@ export function  Bollywood(){
        {data.data.filter(element=>element.category==='bollywood').map((element,index)=>{
            return(
                <div key={element.id} className="contentBox">
-                   
                <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
                <div key={index} className="textContent">
                <Link to={`/article/${element.id}`}><h1 className="contentTitle">{element.title}</h1></Link>
+            
                <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p>
                </div>
    

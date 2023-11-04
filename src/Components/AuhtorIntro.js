@@ -5,7 +5,7 @@ export function AuthorInfo(){
     <div className="authorInfo">
         <img src={userProfile} />
         <div className="authorTextContent">
-            <span style={{fontWeight:"bold"}}>Swceag Hokie</span>
+            <span style={{fontWeight:"bold"}}>Vinu Suhas</span>
 
             <p style={{color:"#A2A2A2"}}> Jan 28, 2023 · 10 min read</p>
         </div>
