@@ -81,7 +81,7 @@ export function  Homes(){
         {displayArticles.filter(element=>element.category==='hollywood').slice(0,3).map((element,index)=>{
                 return(<div  key={index} className="recommendedContentElement" >
                     <Link  to={`/article/${element.id}`}>
-                        <h3 style={{width:"30vw"}}>{element.title}</h3> 
+                        <h3 style={{width:"30vw"}}>{element.title.slice(0,65)}</h3> 
                         <img src={element.img} style={{width:"30vw",height:"40vh", borderRadius:"20px"}}/>
                     </Link>
                 </div>) 
