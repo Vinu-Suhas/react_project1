@@ -6,7 +6,7 @@ export function  Bollywood(){
     return(<>
         <div className="contentContainer" >
        <div className="leftContainer">
-       <h1  style={{textAlign:"left",textDecoration: "underline",textDecorationColor:"red"}}>Bollywood</h1>
+       <h1 className="inlineOnMobile" style={{textAlign:"left",textDecoration: "underline",textDecorationColor:"red"}}>Bollywood</h1>
        {/* <hr style={{ border:"5px solid green",marginLeft:"-5px",width:"8vw",marginTop:"-15px"}}/> */}
        {data.data.filter(element=>element.category==='bollywood').map((element,index)=>{
            return(

@@ -9,6 +9,7 @@
     position: relative;
     bottom: -2vh;
     width: 100%;
+    overflow-x: hidden;
 }
 .unstyledList{
     /* display: flex; */
@@ -16,4 +17,7 @@
 }
 .col-sm{
     text-align: center;
+}
+@media screen and (min-width:250px) and (max-width:500px){
+    
 }

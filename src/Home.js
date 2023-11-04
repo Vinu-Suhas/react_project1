@@ -12,7 +12,7 @@ import { ArticleInfo } from "./Components/ArticleInfo";
 import Footer from "./Components/Footer";
 export function Home() {
   return (
-    <div style={{width:"100%",overflowX:"hidden"}}>
+    <div style={{width:"100%",}}>
       <div>
         <h1 className="center">
           <div style={{transform: "matrix(0, -1, 1, 0, 0, 0)",}}><span >The </span></div> <span>Siren</span>

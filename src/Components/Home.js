@@ -21,10 +21,7 @@ export function  Homes(){
 
             {/* <img src="https://images.unsplash.com/photo-1472437774355-71ab6752b434?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1548&q=80" width ="200px"  height="200px"   alt="Snow" /> */}
         </div>
-
-
-        
-    </div>
+ </div>
     <h1 style={{textAlign:"left",textDecoration: "underline",textDecorationColor:"red"}}>The Latest</h1>
     <div className="recommendedContent">
         {displayArticles.slice(0,3).map((element,index)=>{
@@ -42,7 +39,7 @@ export function  Homes(){
        {/* <hr style={{ border:"5px solid green",marginLeft:"-5px",width:"8vw",marginTop:"-15px"}}/> */}
        {data.data.filter(element=>element.category==='hollywood' | element.category==='sports').slice(0,3).map((element,index)=>{
            return(
-               <div key={element.id} className="contentBox">
+               <div key={element.id} className="">
                    
                <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
                <div key={index} className="textContent">

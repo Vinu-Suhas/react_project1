@@ -15,7 +15,7 @@ export function  Fitness(){
                    
                <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
                <div key={index} className="textContent">
-               <Link to={`/article/${element.id}`}><h1 className="contentTitle">{element.title}</h1></Link>
+               <Link to={`/article/${element.id}`}><h3 className="contentTitle">{element.title}</h3></Link>
                <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p>
                </div>
    
@@ -35,7 +35,7 @@ export function  Fitness(){
                    
                        <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
                        <div key={index} className="textContent">
-                       <Link to={`/article/${element.id}`}><h2 className="contentTitle">{element.title.slice(0,81)}</h2></Link>
+                       <Link to={`/article/${element.id}`}><h3 className="contentTitle">{element.title.slice(0,81)}</h3></Link>
                        {/* <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p> */}
                        </div>
            

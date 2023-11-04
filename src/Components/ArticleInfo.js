@@ -19,7 +19,7 @@ export function ArticleInfo(){
     <img src={articleData.img} width="500px" style={{border:"solid black 4px",alignSelf:"center", borderRadius:"20px"}}/>
 
     </div>
-    <p style={{width:"50%",alignSelf:"center"}}>
+    <p style={{width:"50%",margin: "auto"}}>
     React works by breaking down complex UIs into small, reusable components. A component is a self-contained piece of code that renders a specific part of the UI. Components can be nested within other components to create complex UIs.
 
     When you define a component in React, you describe what you want to render on the screen. React then takes care of updating the DOM efficiently to match the desired state of the UI.
