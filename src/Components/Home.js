@@ -39,7 +39,7 @@ export function  Homes(){
        {/* <hr style={{ border:"5px solid green",marginLeft:"-5px",width:"8vw",marginTop:"-15px"}}/> */}
        {data.data.filter(element=>element.category==='hollywood' | element.category==='sports').slice(0,3).map((element,index)=>{
            return(
-               <div key={element.id} className="">
+               <div key={element.id} className="" style={{display:"flex"}} >
                    
                <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
                <div key={index} className="textContent">
