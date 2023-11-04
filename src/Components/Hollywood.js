@@ -13,9 +13,9 @@ export function  Hollywood(){
            return(
                <div key={element.id} className="contentBox">
                    
-               <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
+               <img src={element.img}   alt="img not found"/>
                <div key={index} className="textContent">
-               <Link to={`/article/${element.id}`}><h1 className="contentTitle">{element.title}</h1></Link>
+               <Link to={`/article/${element.id}`}><h2 className="contentTitle">{element.title}</h2></Link>
                <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p>
                </div>
    
@@ -33,7 +33,7 @@ export function  Hollywood(){
                    return(            
                        <div key={element.id} className="contentBox">
                    
-                       <img src={element.img} width={"300px"} style={{borderRadius:"18px"}} alt="img not found"/>
+                       <img src={element.img} alt="img not found"/>
                        <div key={index} className="textContent">
                        <Link to={`/article/${element.id}`}><h2 className="contentTitle">{element.title.slice(0,81)}</h2></Link>
                        {/* <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p> */}
@@ -44,7 +44,7 @@ export function  Hollywood(){
                })}
                {/* <img src="https://shorturl.at/achz4"  style={{width:"400px",display:"block",borderRadius:"16px"}} />
                <h2 style={{width:"400px"}}>Catch hot Ballons with adventures trekking</h2> */}
-               <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c0a3fdfc-8a4f-4b20-92ef-896499c05843.gif" height="419px" width="600px"/>
+               <img src="https://m.media-amazon.com/images/S/al-eu-726f4d26-7fdb/c0a3fdfc-8a4f-4b20-92ef-896499c05843.gif"  className="ad"/>
                </div>
    
                </div>
