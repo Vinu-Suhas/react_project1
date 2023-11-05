@@ -24,13 +24,26 @@ export function Home() {
       <CreateStore>
         <BrowserRouter>
         <ul className="heading_container" >
+           <li className="dropDownMenu dropdown" id="myTopnav" onClick={()=>{
+              let x = document.getElementsByClassName("underline");
+              if(x[0].classList.contains('hide')){
+
+                for(let i=0;i<x.length;i++){
+                  x[i].classList.remove('hide')
+                }
+              }
+              else {
+                for(let i=0;i<x.length;i++){
+                  x[i].classList.add('hide')
+                }
+              }
+           }}><FontAwesomeIcon icon={faBars}  size="2xl" /></li>
            <Link to="/"> <li className="underline">Home</li></Link>
            <Link to="/bollywood"> <li className="underline">Bollywood</li></Link>
            <Link to="/hollywood"><li className="underline">Hollywood</li></Link>
            <Link to="/technology"><li className="underline">Technology</li></Link>
            <Link to="/food"><li className="underline">Food</li></Link>
            <Link to="/fitness"><li className="underline">Fitness</li></Link>
-           <li className="dropDownMenu dropdown"><FontAwesomeIcon icon={faBars}  size="2xl" /></li>
         </ul>
         <hr/>
         <Routes >

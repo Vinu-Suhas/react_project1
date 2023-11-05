@@ -25,12 +25,13 @@ export function  Homes(){
     <h1 style={{textAlign:"left",textDecoration: "underline",textDecorationColor:"red"}}>The Latest</h1>
     <div className="recommendedContent">
         {displayArticles.slice(0,3).map((element,index)=>{
-                return(<div  key={index} className="recommendedContentElement" >
+                return(
                     <Link  to={`/article/${element.id}`}>
+                <div  key={index} className="recommendedContentElement" >
                         <img src={element.img}/>
                         <h3 >{element.title}</h3> 
-                    </Link>
-                </div>) 
+                   
+                </div> </Link>) 
         } )}
     </div>
     <div className="contentContainer" >
@@ -38,16 +39,18 @@ export function  Homes(){
        <h1  style={{textAlign:"left",textDecoration: "underline",textDecorationColor:"red"}}>Latest Articles</h1>
        {/* <hr style={{ border:"5px solid green",marginLeft:"-5px",width:"8vw",marginTop:"-15px"}}/> */}
        {data.data.filter(element=>element.category==='hollywood' | element.category==='sports').slice(0,4).map((element,index)=>{
-           return(
-               <div key={element.id} className="latestArticles" >
+           return( 
+           <Link to={`/article/${element.id}`}>
+               <div key={index} className="latestArticles" >
                    
                <img src={element.img}  alt="img not found"/>
                <div key={index} className="textContent">
-               <Link to={`/article/${element.id}`}><h2 className="contentTitle">{element.title}</h2></Link>
+              <h2 className="contentTitle">{element.title}</h2>
                <p>Gujarat is vastly underrated and it's a mystery to us why the region isn't more well-</p>
                </div>
    
                </div>
+               </Link>
            )
            
        })}
@@ -58,7 +61,7 @@ export function  Homes(){
                {/* <hr style={{ border:"4px solid green",width:"5vw",alignContent:"left"}}/> */}
                {data.data.filter(element=>element.category==='technology').slice(0,2).map((element,index)=>{
                    return(            
-                       <div key={element.id} className="contentBox">
+                       <div key={index} className="contentBox">
                    
                        <img src={element.img}  alt="img not found"/>
                        <div key={index} className="textContent">
@@ -78,12 +81,13 @@ export function  Homes(){
     <h1 style={{textAlign:"left",textDecoration: "underline",textDecorationColor:"red"}}>The Latest</h1>
     <div className="recommendedContent">
         {displayArticles.filter(element=>element.category==='hollywood').slice(0,3).map((element,index)=>{
-                return(<div  key={index} className="recommendedContentElement" >
+                return(
                     <Link  to={`/article/${element.id}`}>
+                <div  key={index} className="recommendedContentElement" >
                         <img src={element.img} />
                         <h3 >{element.title.slice(0,65)}</h3> 
-                    </Link>
-                </div>) 
+                </div> 
+                    </Link>)
         } )}
     </div>
     </div>)
