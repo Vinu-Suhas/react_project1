@@ -195,9 +195,23 @@
 
 .rightContainer a{
   text-decoration: none;
-  
 }
-  @media (min-width: 400px) and (max-width: 768px) {
+/* start home page */
+.recommendedContent img{
+  width: 30vw; 
+  height: 40vh; 
+  border-radius: 20px;
+} 
+.recommendedContent h3{
+  width: 30vw;
+}
+.latestArticles{
+  display: flex;
+  margin-top: 2vh;
+}
+/* end home page  */
+
+@media (min-width: 300px) and (max-width: 768px) {
     .contentContainer{
       flex-direction: column;
       display: flex;
@@ -214,8 +228,11 @@
     .heading_container{
       flex-direction: column;
       float: right;
-      position: relative;
-      display: none;
+      position: absolute;
+      right: 0;
+    top: 0;
+  
+      /* display: none; */
    }
    .contentBox{
     flex-direction: column;
@@ -223,6 +240,7 @@
    .recommendedContent{
     flex-direction: column;
     justify-content: center;
+    align-items: center;
    }
    .recommendedContentElement{
     flex-direction: column;
@@ -231,17 +249,19 @@
     width:100vw;
   }
    .recommendedContentElement img{
-    width: 100vw;
+    width: 95vw;
     height: 30vh;
 
+  }
     .subheading_container button{
       padding: 5px 13px;
+      margin-left: 33% 
     }
-   }
+   /* start home page */
    .recommendedContentElement h3{
     width: 98vw;
-   }
-
+  }
+  
     /* .inlineOnMobile{
       display: inline;
     } */
@@ -252,10 +272,12 @@
     .leftContainer img{
       width: 95vw;
       border-radius:18px;
+      height: 25vh;
+      align-items: center;
     }
     .ad{
       display: none;
-      }
+    }
     .rightContainer{
       width: 100vw;
     }
@@ -267,5 +289,46 @@
       align-items: center;
 
     }
-
+    .recommendedContent h3{
+      width: 100vw;
+    
+    }
+    .grid_container{
+      
+      grid-template-columns: 100vw ;
+      grid-template-rows: 20vh 20vh 20vh ;
+    row-gap: 10px;
+      margin-left: 0;
+    }
+    .container1 {
+      grid-row: 1/2;
+      grid-column: 1;
+    }
+    .container2 {
+      grid-row: 2/3;
+      grid-column: 1;
+    }
+    .container3 {
+      grid-row: 3/4;
+      grid-column: 1;
+    }
+    .latestArticles{
+     flex-direction: column;
+     align-items: center
+    }
+    .homeContainer{
+        align-items: center;
+    }
+    .textContent{
+      margin: 0;
+      margin-left: 5px;
+    }
+    /* end home page  */
+  }
+  @media screen and (max-width: 600px) {
+    .heading_container a {display: none;}
+    .topnav .dropdown {
+      float: right;
+      display: block;
+    }
   }

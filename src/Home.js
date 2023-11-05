@@ -30,7 +30,7 @@ export function Home() {
            <Link to="/technology"><li className="underline">Technology</li></Link>
            <Link to="/food"><li className="underline">Food</li></Link>
            <Link to="/fitness"><li className="underline">Fitness</li></Link>
-           <li className="dropDownMenu"><FontAwesomeIcon icon={faBars}  size="2xl" /></li>
+           <li className="dropDownMenu dropdown"><FontAwesomeIcon icon={faBars}  size="2xl" /></li>
         </ul>
         <hr/>
         <Routes >
